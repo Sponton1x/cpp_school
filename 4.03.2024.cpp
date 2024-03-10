@@ -35,7 +35,7 @@ int main()
 	
 	std::cout << "Suma " << int_suma(a, b) << std::endl;
 	
-	std::cout << "Czy chcesz kontynuowaæ (t/T - tak, inny znak - nie)? ";
+	std::cout << "Czy chcesz kontynuowaÃ¦ (t/T - tak, inny znak - nie)? ";
     
 	} while (std::getchar() == 't' or std::getchar() == 'T');
 	
