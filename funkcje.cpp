@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cstdio>
 
-using namespace std;
-
 
 // Kiedy int => zwraca liczbê przez return
 int FSuma_int(int a, int b)
@@ -27,39 +25,41 @@ int FDzielenie_int(int a, int b)
 
 void FSuma_void(int a, int b)
 {
-	cout << "Suma: " << a+b << endl;
+	std::cout << "Suma: " << a+b << std::endl;
 }
 
 void FRoznica(int a, int b)
 {
-	cout << "Roznica: " << a-b << endl;
+	std::cout << "Roznica: " << a-b << std::endl;
 }
 
 void FMnozenie(int a, int b)
 {
-	cout << "Mnozenie: " << a*b << endl;
+	std::cout << "Mnozenie: " << a*b << std::endl;
 }
 
 void FDzielenie(float a, float b)
 {
-	cout << "Dzielenie: " << a/b << endl;
+	std::cout << "Dzielenie: " << a/b << std::endl;
 }
 
 int main()
 {
 	setlocale(LC_CTYPE, "Polish");
 	
-	int a;
-	int b;
+	std::int a;
+	std::int b;
 	
-	int choice;
-	
-	
-	cout << "Podaj 1 liczbe: "; cin >> a;
-	cout << "Podaj 2 liczbe: "; cin >> b;
+	std::int choice;
 	
 	
-	cout << "Podaj dzia³anie \n1. Dodawanie\n2. Odejmowanie\n3. Mno¿enie\n4. Dzielenie\n"; cin >> choice;
+	std::cout << "Podaj 1 liczbe: "; 
+	std::cin >> a;
+	std::cout << "Podaj 2 liczbe: "; 
+	std::cin >> b;
+	
+	std::cout << "Podaj dzia³anie \n1. Dodawanie\n2. Odejmowanie\n3. Mno¿enie\n4. Dzielenie\n"; 
+	std::cin >> choice;
 	
 	/*FSuma_void(a, b);
 	FRoznica(a, b);
@@ -68,19 +68,19 @@ int main()
 	
 	switch(choice) {
 		case 1:
-			cout << FSuma_int(a, b);
+			std::cout << FSuma_int(a, b);
 			break;
 		case 2:
-			cout << FRoznica_int(a, b);
+			std::cout << FRoznica_int(a, b);
 			break;
 		case 3:
-			cout << FMnozenie_int(a, b);
+			std::cout << FMnozenie_int(a, b);
 			break;
 		case 4:
-			cout << FDzielenie_int(a, b);
+			std::cout << FDzielenie_int(a, b);
 			break;
 		default:
-			cout << "Nie podano dzia³ania";
+			std::cout << "Nie podano dzia³ania";
 	}
 	
 	return 0;
