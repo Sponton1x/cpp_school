@@ -4,7 +4,7 @@
 using namespace std;
 
 
-// Kiedy int => zwraca liczbê przez return
+// Kiedy int => zwraca liczbÃª przez return
 int FSuma_int(int a, int b)
 {
 	return a+b;
@@ -59,7 +59,7 @@ int main()
 	cout << "Podaj 2 liczbe: "; cin >> b;
 	
 	
-	cout << "Podaj dzia³anie \n1. Dodawanie\n2. Odejmowanie\n3. Mno¿enie\n4. Dzielenie\n"; cin >> choice;
+	cout << "Podaj dziaÂ³anie \n1. Dodawanie\n2. Odejmowanie\n3. MnoÂ¿enie\n4. Dzielenie\n"; cin >> choice;
 	
 	/*FSuma_void(a, b);
 	FRoznica(a, b);
@@ -80,7 +80,7 @@ int main()
 			cout << FDzielenie_int(a, b);
 			break;
 		default:
-			cout << "Nie podano dzia³ania";
+			cout << "Nie podano dziaÂ³ania";
 	}
 	
 	return 0;
