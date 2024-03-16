@@ -13,9 +13,9 @@ bool is_even_case_2(int a)
 }
 
 // Return bool value, using bitwaise AND. Check last bite from number. If is 0, then number is even. Else is not even.
-bool is_even_case_3(int number)
+bool is_even_case_3(int a)
 {
-    return (number & 1) == 0;
+    return (a&1) == 0;
 }
 
 int main()
