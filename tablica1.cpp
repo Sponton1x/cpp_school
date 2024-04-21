@@ -1,11 +1,11 @@
 #include <iostream>
 
 int main() {
-	int tab[5] = {3, 5, 6, 3, 7}; // jeœli podamy mniej ni¿ zak³adamy => zwróci 0 w puste komórki
+	int tab[5] = {3, 5, 6, 3, 7}; // jeÅ“li podamy mniej niÂ¿ zakÂ³adamy => zwrÃ³ci 0 w puste komÃ³rki
 	int count;
 	int suma = 0;
 	
-	for(int i=0; i<=4; i++) { // jeœli i podamy wiêksze ni¿ zakres tablicy, to zwróci nam przypadkowe wartoœci z pamiêci RAM.
+	for(int i=0; i<=4; i++) { // jeÅ“li i podamy wiÃªksze niÂ¿ zakres tablicy, to zwrÃ³ci nam przypadkowe wartoÅ“ci z pamiÃªci RAM.
 		if (tab[i] % 2 == 0) {
 			count += 1;
 		}
