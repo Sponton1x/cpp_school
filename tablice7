@@ -1,0 +1,33 @@
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+#include<conio.h>
+
+
+int main() {
+	int tab[10];
+	int counter = 0;
+	
+	do {
+		
+	srand(time(0));
+	counter = 0;
+	
+	
+	// generate	
+	for(int i=0; i<10; i++) {
+		tab[i] = (rand()%100) + 1;
+		std::cout << tab[i] << "\t"; 
+	}
+	
+	for(int i=0; i<9; i++) {
+	    if(tab[i] < 50) {
+			counter++;
+		}
+	}
+
+	std::cout << "Ilosc elementow: " << counter << std::endl;
+		
+	std::cout << "Czy chcesz kontynuowac? t/n\n";
+	} while(getch()==116);
+}
